@@ -25,6 +25,8 @@ Configuration is simple through appsettings.json file:
 # Installation
 
 install service with standard .net utilities:
-sc.exe 
 
+sc.exe 
+```
 sc.exe create IpSpyService binpath= "C:\Path\To\IpSpy.exe"
+```
