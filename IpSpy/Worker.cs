@@ -34,7 +34,7 @@ namespace IpSpy
                    ipAddress = newIp;
                 }
 
-                logger.LogInformation("IpService running at: {time} {ip}", DateTimeOffset.Now, newIp);
+                logger.LogInformation("IpSpy service running at: {time} {ip}", DateTimeOffset.Now, newIp);
                 await Task.Delay(ipSpyConfig.CheckInterval * 1000 * 60, stoppingToken);
             }
         }
