@@ -1,5 +1,6 @@
 # IpSpy
 IpSpy runs as a service and sends email with external ip of a machine (if ip has changed)
+The main purpose of this service is to know external/public ip of the remote pc, to be able to start it using WOL (wake on lan) feature or to connect to it via remote desktop.
 
 Configuration is simple through appsettings.json file:
 ```
@@ -24,9 +25,15 @@ Configuration is simple through appsettings.json file:
 
 # Installation
 
-install service with standard .net utilities:
+install service with standard .net utilities
 
-sc.exe 
+install with sc.exe:
 ```
-sc.exe create IpSpyService binpath= "C:\Path\To\IpSpy.exe"
+sc create IpSpyService binpath= "C:\Path\To\IpSpy.exe" start= auto
+```
+
+and then
+
+```
+sc start IpSpyService
 ```
