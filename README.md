@@ -1,7 +1,7 @@
 # IpSpy
 IpSpy runs as a service and sends email with external/public ip of a machine (if ip has changed for some reasons).
 
-The main purpose of this service is to know external/public ip of the remote pc, and then to be able to start it using WOL (wake on lan) feature or to connect to it via remote desktop (if your ps doesn't have static ip)
+The main purpose of this service is to know external/public ip of the remote pc, so then you can start it using WOL (wake on lan) feature or connect to it via remote desktop (if your ps doesn't have static ip)
 
 Configuration is simple through appsettings.json file:
 ```
