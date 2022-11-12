@@ -30,7 +30,7 @@ namespace IpSpy
                 var newIp = await ipSpyService.GetIPAsync();
                 if (ipAddress != newIp)
                 {
-                   mailService.SendMail(ipAddress);
+                   mailService.SendMail(newIp);
                    ipAddress = newIp;
                 }
 
