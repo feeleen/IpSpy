@@ -1,5 +1,5 @@
 # IpSpy
-IpSpy runs as a service and sends email with external ip of a machine (if ip has changed for some reasons).
+IpSpy runs as a service and sends email with external/public ip of a machine (if ip has changed for some reasons).
 
 The main purpose of this service is to know external/public ip of the remote pc, and then to be able to start it using WOL (wake on lan) feature or to connect to it via remote desktop (if your ps doesn't have static ip)
 
