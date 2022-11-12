@@ -1,5 +1,5 @@
 # IpSpy
-IpSpy runs as a service and sends email with external ip of a machine
+IpSpy runs as a service and sends email with external ip of a machine (if ip has changed)
 
 Configuration is simple through appsettings.json file:
 ```
